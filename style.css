@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 200vh;
+    padding: 0 20px;
+    /* background: rgb(34, 193, 195);
+    background: linear-gradient(
+        0deg,
+        rgba(34, 193, 195, 1) 7%,
+        rgba(86, 192, 159, 1) 20%
+    );
+    background-repeat: no-repeat; */
+}
+
+/* first Slider*/
+.image {
+    max-width: 500px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+
+    overflow: hidden;
+    margin: 0 auto;
+}
+.imageDiv {
+    height: 100%;
+    min-width: 100%;
+    transition: display 2s;
+    animation-name: gugu;
+    animation-duration: 1.5s;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.relative {
+    position: relative;
+
+    overflow: hidden;
+}
+.arrowDiv {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    /* transform: translateY(-50%); */
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 570px;
+    width: 100%;
+}
+.arrowDiv label {
+    font-size: 25px;
+    cursor: pointer;
+}
+@keyframes gugu {
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.circles label {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+.active {
+    background-color: #000;
+}
+.checkboxDiv {
+    display: flex;
+
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Second Slider*/
+.BannerParent {
+    max-width: 800px;
+    width: 100%;
+
+    margin: 100px auto 0 auto;
+}
+.BannerContainer {
+    display: flex;
+
+    overflow: hidden;
+    /* position: relative; */
+}
+.BannerBox {
+    min-width: 100%;
+    border-radius: 20px;
+
+    transition: transform 1.5s;
+}
+.relat {
+    position: relative;
+}
+.BannerBox img {
+    width: 100%;
+
+    height: 250px;
+    vertical-align: top;
+}
+.spanBullet {
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.spanBox {
+    max-width: 60px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.backgroundBlack {
+    background-color: #000;
+}
